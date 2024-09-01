@@ -5,20 +5,63 @@
 }
 
 .todo-card {
-  border: 1px solid #ddd;
-  border-radius: 0.375rem;
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
-  text-align: left;
-  margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: .375rem;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    text-align: left;
+    position: relative;
+    margin-bottom: 1rem; /* Space between rows */
 }
 .todo-card h2 {
-  font-size: 1.5rem;
-  color: #333;
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 0.5rem;
 }
 .todo-card p {
-  color: #666;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+.todo-card .date-icon {
+    color: #007bff; /* Blue color for the date icon */
+}
+.todo-card .status {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.todo-card .status.completed {
+    color: #28a745; /* Green color for completed tasks */
+}
+.todo-card .status.uncompleted {
+    color: #dc3545; /* Red color for uncompleted tasks */
+}
+.todo-card .actions {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.todo-card .actions button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+.todo-card .actions button:hover {
+    color: #0056b3;
+}
+.todo-card .actions .btn-delete {
+    color: #dc3545;
+}
+.todo-card .actions .btn-delete:hover {
+    color: #c82333;
+}
+.todo-card .actions .btn-edit {
+    color: #007bff;
+}
+.todo-card .actions .btn-edit:hover {
+    color: #0056b3;
 }
 
 /* smaller screens */
