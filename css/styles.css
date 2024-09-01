@@ -57,3 +57,17 @@ h1 {
   font-size: 1rem;
   color: #666;
 }
+
+/* smaller screens */
+@media (max-width: 768px) {
+    .todo-card {
+        width: calc(50% - 20px); 
+    }
+}
+
+/* very small screens */
+@media (max-width: 480px) {
+    .todo-card {
+        width: 100%; 
+    }
+}
